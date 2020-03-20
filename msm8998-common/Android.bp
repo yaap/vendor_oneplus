@@ -225,12 +225,13 @@ android_app_import {
 android_app_import {
 	name: "dpmserviceapp",
 	owner: "oneplus",
-	apk: "proprietary/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+  product_specific: true,
 }
 
 android_app_import {
@@ -308,7 +309,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
 }
 
 android_app_import {
@@ -340,4 +340,3 @@ dex_import {
 	owner: "oneplus",
 	jars: ["proprietary/framework/WfdCommon.jar"],
 }
-
