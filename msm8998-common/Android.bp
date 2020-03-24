@@ -325,9 +325,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "CNEService",
+	name: "CneApp",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/CNEService/CNEService.apk",
+	apk: "proprietary/product/priv-app/CneApp/CneApp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,

@@ -1259,7 +1259,7 @@ PRODUCT_PACKAGES += \
     imssettings \
     ims \
     qcrilmsgtunnel \
-    CNEService \
+    CneApp \
     WfdCommon
 endif
 
