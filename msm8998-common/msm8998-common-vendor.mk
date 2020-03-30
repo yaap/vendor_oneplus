@@ -1221,22 +1221,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/lib,system/lib)
-
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/lib64,system/lib64)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/framework,system/framework)
-
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/product/lib,$(TARGET_OUT_PRODUCT)/lib)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/product/lib64,$(TARGET_OUT_PRODUCT)/lib64)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/product/framework,$(TARGET_OUT_PRODUCT)/framework/)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/product/etc,$(TARGET_OUT_PRODUCT)/etc/)
-
-
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/vendor/lib,$(TARGET_COPY_OUT_VENDOR)/lib)
-
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/vendor/lib64,$(TARGET_COPY_OUT_VENDOR)/lib64)
-
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/vendor/bin,$(TARGET_COPY_OUT_VENDOR)/bin)
-
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/vendor/radio,$(TARGET_COPY_OUT_VENDOR)/radio)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/oneplus/msm8998-common/proprietary/bin,system/bin)
 
 PRODUCT_PACKAGES += \
