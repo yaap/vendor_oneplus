@@ -266,7 +266,6 @@ android_app_import {
 	name: "TimeService",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: ":timeservice_app_cert-legacy-um",
 	dex_preopt: {
 		enabled: false,
 	},
