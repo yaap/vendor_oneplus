@@ -265,8 +265,8 @@ android_app_import {
 android_app_import {
 	name: "TimeService",
 	owner: "oneplus",
-	certificate: "platform",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -392,12 +392,6 @@ dex_import {
 	name: "tcmclient",
 	owner: "oneplus",
 	jars: ["proprietary/framework/tcmclient.jar"],
-}
-
-dex_import {
-	name: "vendor.oneplus.camera.CameraHIDL-V1.0-java",
-	owner: "oneplus",
-	jars: ["proprietary/framework/vendor.oneplus.camera.CameraHIDL-V1.0-java.jar"],
 }
 
 dex_import {
