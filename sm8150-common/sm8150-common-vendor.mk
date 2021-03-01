@@ -1362,8 +1362,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libantradio \
-    libsdm-disp-vndapis \
     libplatformconfig \
+    libsdm-disp-vndapis \
     vendor.qti.hardware.capabilityconfigstore@1.0 \
     libqct_resampler \
     SoterService \
