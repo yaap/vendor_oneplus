@@ -1373,9 +1373,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libantradio \
-    libplatformconfig \
     libsdm-disp-vndapis \
-    vendor.qti.hardware.capabilityconfigstore@1.0 \
     libqct_resampler \
     SoterService \
     OnePlusCameraService \
