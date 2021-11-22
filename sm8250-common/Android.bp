@@ -5,6 +5,57 @@
 soong_namespace {
 }
 
+android_app_import {
+	name: "HotwordEnrollmentOKGoogleHEXAGON",
+	owner: "oneplus",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "HotwordEnrollmentXGoogleHEXAGON",
+	owner: "oneplus",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "WfdService",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "WfdCommon",
+	owner: "oneplus",
+	jars: ["proprietary/system/framework/WfdCommon.jar"],
+}
+
+prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.3-service.widevine",
+	owner: "oneplus",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
 cc_prebuilt_library_shared {
 	name: "libfastcvopt",
 	owner: "oneplus",
@@ -101,30 +152,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "HotwordEnrollmentOKGoogleHEXAGON",
-	owner: "oneplus",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "HotwordEnrollmentXGoogleHEXAGON",
-	owner: "oneplus",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
 	name: "QtiTelephonyService",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
@@ -143,18 +170,6 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "WfdService",
-	owner: "oneplus",
-	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
 	system_ext_specific: true,
 }
 
@@ -182,12 +197,6 @@ android_app_import {
 	system_ext_specific: true,
 }
 
-dex_import {
-	name: "WfdCommon",
-	owner: "oneplus",
-	jars: ["proprietary/system/framework/WfdCommon.jar"],
-}
-
 prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.1-service-qti",
 	owner: "oneplus",
@@ -210,15 +219,6 @@ prebuilt_etc_xml {
 	name: "android.hardware.neuralnetworks@1.3-service-qti",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.widevine",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
